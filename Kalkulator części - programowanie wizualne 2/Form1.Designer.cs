@@ -40,8 +40,9 @@
             button1.Name = "button1";
             button1.Size = new Size(225, 106);
             button1.TabIndex = 0;
-            button1.Text = "Monitor";
+            button1.Text = "Komputer";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -49,8 +50,9 @@
             button2.Name = "button2";
             button2.Size = new Size(225, 106);
             button2.TabIndex = 1;
-            button2.Text = "Dysk";
+            button2.Text = "Monitor";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // richTextBox1
             // 
@@ -63,11 +65,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(660, 84);
+            label1.Location = new Point(674, 85);
             label1.Name = "label1";
-            label1.Size = new Size(25, 32);
+            label1.Size = new Size(131, 32);
             label1.TabIndex = 3;
-            label1.Text = "c";
+            label1.Text = "Cena (PLN)";
             label1.Click += label1_Click;
             // 
             // Form1
@@ -80,7 +82,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Kalkulator części komputerowych";
             ResumeLayout(false);
             PerformLayout();
         }
