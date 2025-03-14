@@ -12,6 +12,14 @@ namespace Kalkulator_części___programowanie_wizualne_2
 {
     public partial class Form2 : Form
     {
+
+        public double SUM
+        {
+            get { return ProcessorPrice + DrivePrice; }
+        }
+
+
+
         double ProcessorPrice = 0;
         double DrivePrice = 0;
         public Form2()
@@ -80,5 +88,10 @@ namespace Kalkulator_części___programowanie_wizualne_2
             richTextBox1.Text = ProcessorPrice.ToString();
         }
 
+        private void richTextBox3_TextChanged(object sender, EventArgs e)
+        {
+            double SUM = ProcessorPrice + DrivePrice;
+            richTextBox3.Text = SUM.ToString();
+        }
     }
 }

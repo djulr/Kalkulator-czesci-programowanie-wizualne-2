@@ -110,6 +110,7 @@
             richTextBox3.Size = new Size(168, 66);
             richTextBox3.TabIndex = 8;
             richTextBox3.Text = "";
+            richTextBox3.TextChanged += richTextBox3_TextChanged;
             // 
             // label4
             // 

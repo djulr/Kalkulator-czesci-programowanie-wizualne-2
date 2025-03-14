@@ -37,10 +37,12 @@
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
+            listBox1.Items.AddRange(new object[] { "Dell UltraSharp U2723QE", "LG 27GN950-B", "Samsung Odyssey G7 (LC32G75TQSNXZA)", "ASUS ProArt Display PA278CV", "BenQ EX3501R", "Acer Predator XB273K" });
             listBox1.Location = new Point(66, 49);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(654, 388);
             listBox1.TabIndex = 0;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // label1
             // 

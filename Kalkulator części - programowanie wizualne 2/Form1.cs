@@ -7,6 +7,7 @@ namespace Kalkulator_części___programowanie_wizualne_2
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
