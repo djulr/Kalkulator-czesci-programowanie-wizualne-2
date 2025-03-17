@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Kalkulator_części___programowanie_wizualne_2;
+
+
 
 namespace Kalkulator_części___programowanie_wizualne_2
 {
@@ -61,10 +64,10 @@ namespace Kalkulator_części___programowanie_wizualne_2
                     DrivePrice = 1666.66;
                     break;
                 case 3:
-                    ProcessorPrice = 1239.99;
+                    DrivePrice = 1239.99;
                     break;
                 case 4:
-                    ProcessorPrice = 1666.66;
+                    DrivePrice = 1666.66;
                     break;
             }
             richTextBox2.Text = DrivePrice.ToString();
@@ -85,12 +88,15 @@ namespace Kalkulator_części___programowanie_wizualne_2
                     break;
 
             }
+
+            
             richTextBox1.Text = ProcessorPrice.ToString();
         }
 
         private void richTextBox3_TextChanged(object sender, EventArgs e)
         {
             double SUM = ProcessorPrice + DrivePrice;
+            SharedData.Wartosc2 = SUM;
             richTextBox3.Text = SUM.ToString();
         }
     }

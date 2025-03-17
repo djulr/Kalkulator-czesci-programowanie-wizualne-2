@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Kalkulator_części___programowanie_wizualne_2;
 
 namespace Kalkulator_części___programowanie_wizualne_2
 {
@@ -46,6 +47,7 @@ namespace Kalkulator_części___programowanie_wizualne_2
                     MonitorPrice = 4420.37;
                     break;
             }
+            SharedData.Wartosc3 = MonitorPrice;
             richTextBox1.Text = MonitorPrice.ToString();
         }
     }

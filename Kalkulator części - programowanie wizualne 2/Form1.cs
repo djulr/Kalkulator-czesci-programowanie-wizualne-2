@@ -1,9 +1,7 @@
+
+
+using Kalkulator_części___programowanie_wizualne_2;
 namespace Kalkulator_części___programowanie_wizualne_2
-
-
-
-
-
 {
     public partial class Form1 : Form
     {
@@ -28,6 +26,14 @@ namespace Kalkulator_części___programowanie_wizualne_2
         {
             Form3 form3 = new Form3(); // Tworzymy nową instancję Form2
             form3.Show(); // Pokazujemy Form3
+        }
+
+      
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            double price = (SharedData.Wartosc2 + SharedData.Wartosc3);
+            richTextBox1.Text = price.ToString();
         }
     }
 }
