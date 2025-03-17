@@ -18,14 +18,14 @@ namespace Kalkulator_części___programowanie_wizualne_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(); // Tworzymy nową instancję Form2
-            form2.Show(); // Pokazujemy Form2
+            Form2 form2 = new Form2();
+            form2.Show(); 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3(); // Tworzymy nową instancję Form2
-            form3.Show(); // Pokazujemy Form3
+            Form3 form3 = new Form3(); 
+            form3.Show(); 
         }
 
       
